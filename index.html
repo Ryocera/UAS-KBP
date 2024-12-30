@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>UAS KBP</title>
+</head>
+<body>
+    <h1>UAS KBP</h1>
+    <div id="container">
+        <!-- Spotify -->
+        <div class="spotify-container">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"
+                width="100%" height="80" frameborder="0" allowtransparency="true" 
+                allow="encrypted-media">
+            </iframe>
+        </div>
+        <!-- Timer Section -->
+        <div id="timer-container">
+            <p id="work" class="label">Work:</p>
+            <p id="break" class="label">Break:</p>
+            <p id="cycles" class="label">Cycles:</p>
+            <!--Work Timer-->
+            <div id="work-timer" class="timer">
+                <p id="w_minutes">10</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+            </div>
+
+            <!--Cycle Counter-->
+            <p id="counter" class="timer">0</p>
+
+            <!--Break Timer-->
+            <div id="break-timer" class="timer">
+                <p id="b_minutes">01</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+            </div>
+            <button id="start" class="btn">Start</button>
+            <button id="stop" class="btn">Pause</button>
+            <button id="reset" class="btn">Reset</button>
+        </div>
+
+        <!-- To-Do Section -->
+        <div id="todo-container">
+            <p>TO DO LIST</p>
+            <input id="inputField" type="text" placeholder="Add a new task"><button id="addToDo">+</button>
+            <div class="to-dos" id="toDoContainer"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
